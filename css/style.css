@@ -7,17 +7,13 @@ body{
     font-size: 14px;
     margin-left: 70px;
 }
-
 #navbar .navList li a{
     margin:0px 20px;
     color: #6F8BA4
 }
-
-
 #navbar .buttons{
     display: flex;  
 }
-
 #navbar .buttons li{
     margin: 32px 0px 0px 15px;
     font-size: 12px;
@@ -28,7 +24,6 @@ body{
 #navbar .buttons li a{
     text-decoration: none;
 }
-
 #navbar .signIn a{
     color: #1A153A;
     padding: 8px 30px;
@@ -43,7 +38,6 @@ body{
     background-color: #1A153A;
     transition: 0.5s;
 }
-
 #navbar .signUp a{
     color:white;
     padding: 8px 30px;
@@ -52,7 +46,6 @@ body{
     background-color:#1A153A ;
     transition: 0.5s;
 }
-
 #navbar .signUp a:hover{
     color:  #1A153A;
     background-color: white;
@@ -64,7 +57,6 @@ body{
 #intro .header-tex{
     margin: 150px 0px;
 }
-
 #intro .header-tex h1{
     font-weight: 400;
     font-size: 28px;
@@ -119,7 +111,6 @@ grid-template-areas:
     width: 265px;
     position: relative;
 }
-
 #intro .item-grid img{
     border-radius: 5px;
     width: 100%;
@@ -130,14 +121,12 @@ grid-template-areas:
 #intro .item-grid .item img:hover{
     transform: scale(1.1);
     transition: 0.5s;
-
 }
 #intro .item-grid .item{
     border-radius: 5px;
     margin: 6px;
     overflow: hidden;
 }
-
 #intro .item-grid .image .content{
     position: absolute;
     top: 0;
@@ -155,17 +144,25 @@ grid-template-areas:
 
 /* tab-menu Start */
 
+#promo{
+    padding: 100px 0px;
+}
 #promo .tabBtn{
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
     text-align: center;
     display: inline-block;
     padding: 40px;
     text-decoration: none;
-    box-shadow: 1px 1px 19px 1px #cac7c7;
+    transition: 0.5s;
+    color: #3B566E;
+    padding: 30px;
+    border-radius: 5px;
 }
-#promo .tabBtn .text{
-    color: #6F8BA4;
-    font-weight: 400;
-    font-size: 14px;
+#promo .tabBtn:hover{
+    background-color: #1A153A;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
 }
 #promo .tabBtn .icon span{
     display: inline-block;
@@ -175,7 +172,169 @@ grid-template-areas:
     line-height: 60px;
     border-radius: 50%;
     background-color: #F7F6FF;
-}
-#promo .tabBtn .icon i{
     color: black;
+}
+#promo .tabBtn .text h5{
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 15px;
+}
+#promo .tabBtn .text p{
+    letter-spacing: 0.8px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+ 
+}
+/* tab Menu End */
+
+/* features Start */
+#features .left-text h2{
+    font-weight: 400;
+    font-size: 28px;
+    color: #3B566E;
+    letter-spacing: 1.75px;
+    position: relative;
+}
+#features .left-text p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #6F8BA4;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.cloud{
+    padding: 100px 0px;
+    background-color: #F7F6FF;
+}
+#features .Btn{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 350;
+    overflow: hidden;
+    letter-spacing: 0.88px;
+}
+#features .Btn span{
+    color: #3B566E;
+}
+#features .Btn i{
+    margin-left: 22px;
+    margin-right: 32px;
+    color: #3B566E;
+    position: relative;
+    z-index: 2;
+}
+#features .Btn::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -70px;
+    width: 150px;
+    height: 100px;
+    background-color: #F7F6FF;
+    transform: rotate(60deg);
+    transition: 0.5s;
+}
+#features .active::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -70px;
+    width: 150px;
+    height: 120px;
+    background-color: #1A153A;
+    transform: rotate(60deg);
+}
+#features .Btn:hover::after{
+    background-color: #1A153A;
+    transition: 0.5s;
+    height: 120px;
+}
+#features .image img{
+    max-width: 100%;
+    padding-top: 65px;
+}
+#features .design{
+    padding: 100px 0px;
+    background-color: white;
+}
+
+/* features End */
+
+/* parallax */
+
+.parallax-window{
+    min-height: 315px;
+    background: transparent;
+}
+#parallax-num{
+    position: relative;
+    overflow: hidden;
+}
+
+#parallax-num::before{
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 140%;
+    opacity: 0.8;
+    background: #1A153A;
+    z-index: 0;
+    top: -20%;
+    left: -20%;
+}
+#parallax-num .parallax-content{
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
+#parallax-num .parallax-content .count-item{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    transition: 0.3s;
+    color: #fff;
+}
+#parallax-num .parallax-content .count-item:hover{
+    transform: translateY(-10%);
+    transition: 0.3s;
+}
+#parallax-num .parallax-content .count-item strong{
+    font-weight: 350;
+    font-size: 40px;
+    letter-spacing: 1.72px;
+    margin-bottom: 15px;
+    margin-top: 700px;
+    color: #fff;
+    margin-top: 70px;
+}
+#parallax-num .parallax-content .count-item strong::before{
+    content: "";
+    position: absolute;
+    left: -14px;
+    right: 0px;
+    top: 60px;
+    margin: auto;
+    width: 115px;
+    height: 1px;
+    border-top: 1px dashed #fff;
+    font-weight: 400;
+}
+#parallax-num .parallax-content .count-item span{
+    display: block;
+    text-align: center;
+    font-weight: 350;
+    font-size: 20px;
+    letter-spacing: 0.86px;
+    margin-top: 15px;
 }
