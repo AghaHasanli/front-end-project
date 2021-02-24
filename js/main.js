@@ -33,5 +33,14 @@ $(function(){
             "background-color": "white"
         })
     };
-    
+    $(document).on("click",".card-header",function(){
+        $(this).parent().siblings().find(".card-body").slideUp()
+        $(this).next().slideToggle("slow")
+    })
+    $(document).on("click",".navbar-toggler",function(){
+        if($(".navList").hasClass('d-none'))
+        $(".navList").removeClass("d-none")
+        else
+        $(".navList").addClass("d-none")
+    })
 })
