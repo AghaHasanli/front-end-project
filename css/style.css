@@ -156,8 +156,7 @@ div#navbar.whiteing{
 }
 #intro .item-grid{
     display: grid;
-    margin-left: 100px;
-grid-template-areas: 
+    margin-left: 100px;grid-template-areas: 
 
     'item1 item2'
     'item1 item4'
